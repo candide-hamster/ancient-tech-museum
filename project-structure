@@ -1,0 +1,11 @@
+src/
+├── assets/          # 静态资源
+│   ├── models/      # 3D模型文件
+│   └── textures/    # 贴图资源
+├── components/      # 通用组件
+├── views/           # 页面视图
+├── stores/          # Pinia状态管理
+├── utils/           # 工具函数
+├── services/        # 服务层
+├── types/           # TypeScript类型定义
+└── router/          # 路由配置 
