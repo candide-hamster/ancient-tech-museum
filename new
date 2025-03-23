@@ -1,0 +1,9 @@
+src/
+  ├── assets/         # 存放静态资源
+  ├── components/     # Vue组件
+  ├── views/          # 页面视图
+  ├── router/         # 路由配置
+  ├── stores/         # Pinia状态管理
+  ├── i18n/           # 国际化文件
+  ├── models/         # 3D模型
+  └── App.vue         # 根组件 

@@ -4,36 +4,29 @@ import path from 'path'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/ancient-tech-museum/' : '/',
+  base: '/ancient-tech-museum/',
   plugins: [
     vue(),
     VitePWA({
       registerType: 'autoUpdate',
-      strategies: 'generateSW',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
+      includeAssets: ['favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
         name: '溯古·启智',
         short_name: '溯古启智',
         description: '中国古代物理科技互动展馆',
-        theme_color: '#2196F3',
-        start_url: '.',
-        display: 'standalone',
-        background_color: '#ffffff',
+        theme_color: '#42b983',
         icons: [
           {
-            src: '/pwa-192x192.svg',
+            src: 'pwa-192x192.png',
             sizes: '192x192',
-            type: 'image/svg+xml'
+            type: 'image/png'
           },
           {
-            src: '/pwa-512x512.svg',
+            src: 'pwa-512x512.png',
             sizes: '512x512',
-            type: 'image/svg+xml'
+            type: 'image/png'
           }
         ]
-      },
-      workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,svg}']
       }
     })
   ],
