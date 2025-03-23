@@ -8,7 +8,7 @@
     "type-check": "vue-tsc",
     "preview": "vite preview",
     "test": "vitest",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist -r https://github.com/你的用户名/ancient-tech-museum.git"
   },
   "dependencies": {
     "pinia": "^2.1.0",
