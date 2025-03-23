@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/ancient-tech-museum/sw.js', { scope: '/ancient-tech-museum/' })})}
