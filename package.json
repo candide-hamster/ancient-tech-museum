@@ -8,7 +8,7 @@
     "type-check": "vue-tsc",
     "preview": "vite preview",
     "test": "vitest",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist -u \"GitHub <noreply@github.com>\""
   },
   "dependencies": {
     "pinia": "^2.1.0",
